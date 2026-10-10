@@ -5,7 +5,7 @@ export default function MarketTable({ product }) {
 
   if (markets.length === 0) return null;
 
-  // prottek bazar-er average ber kore, kom theke beshi sajalam
+ 
   const rows = markets
     .map((m) => ({ ...m, avg: (m.min + m.max) / 2 }))
     .sort((a, b) => a.avg - b.avg);

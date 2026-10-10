@@ -4,7 +4,7 @@ import ChangeBadge from "./ChangeBadge";
 
 export default function ProductSummary({ product }) {
   const unit = getUnit(product.unit);
-  // gotokal theke koto taka poriborton (positive number)
+ 
   const diff = Math.abs(product.today - product.yesterday);
 
   return (

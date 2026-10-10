@@ -10,7 +10,7 @@ export default function UpdateProfileForm() {
   const router = useRouter();
   const { data: session } = authClient.useSession();
 
-  // ager naam ta input-e age theke boshiye dilam
+  
   const [name, setName] = useState(session?.user?.name || "");
   const [loading, setLoading] = useState(false);
 
@@ -23,7 +23,7 @@ export default function UpdateProfileForm() {
     }
 
     setLoading(true);
-    // BetterAuth-er updateUser: name update kore
+    
     const { error } = await authClient.updateUser({ name: name.trim() });
     setLoading(false);
 

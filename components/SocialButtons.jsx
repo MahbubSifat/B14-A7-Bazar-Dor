@@ -4,7 +4,6 @@ import toast from "react-hot-toast";
 import { authClient } from "@/lib/auth-client";
 
 export default function SocialButtons() {
-  // Google/GitHub-e pathay, login sesh hole nijei "/" (home)-e fire ashe
   async function handleSocial(provider) {
     const { error } = await authClient.signIn.social({
       provider: provider,

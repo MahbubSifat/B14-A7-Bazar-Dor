@@ -11,7 +11,6 @@ export default function ProtectedRoute({ children }) {
   const { data: session, isPending } = authClient.useSession();
 
   useEffect(() => {
-    // check cholche, login kora ache, ba sign out cholche: kichu korbo na
     if (isPending || session || authState.signingOut) return;
 
     // id dilam jate dev mode-e dui bar toast na ashe

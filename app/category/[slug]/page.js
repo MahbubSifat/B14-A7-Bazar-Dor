@@ -5,7 +5,7 @@ import EmptyState from "@/components/EmptyState";
 import { toBn } from "@/lib/helpers";
 
 export default async function CategoryPage({ params }) {
-  // Next.js 16-e params ekta Promise, tai await lage
+  
   const { slug } = await params;
 
   const categories = await getCategories();

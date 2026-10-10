@@ -12,7 +12,7 @@ export default async function Home() {
     .sort((a, b) => b.change.pct - a.change.pct)
     .slice(0, 6);
 
-  // dam komse: sudhu "down" gulo, sobcheye beshi komse age (pct minus, tai a - b), top 6
+  // dam komse: sudhu "down" gulo, sobcheye beshi komse age 
   const fallers = products
     .filter((p) => p.change.dir === "down")
     .sort((a, b) => a.change.pct - b.change.pct)

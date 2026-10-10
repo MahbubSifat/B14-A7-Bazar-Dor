@@ -45,7 +45,6 @@ export default function SignUpForm() {
       return;
     }
 
-    // signup hole login page-e pathabo
     toast.success("অ্যাকাউন্ট তৈরি হয়েছে, এখন সাইন ইন করুন");
     router.push("/signin");
   }

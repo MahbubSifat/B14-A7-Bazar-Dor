@@ -12,7 +12,6 @@ export default function AuthButtons() {
   const { data: session, isPending } = authClient.useSession();
   const [open, setOpen] = useState(false);
 
-  // session check hocche, skeleton dekhai
   if (isPending) {
     return <div className="skeleton h-9 w-32 rounded-lg"></div>;
   }
@@ -34,7 +33,7 @@ export default function AuthButtons() {
     );
   }
 
-  // login kora ache: avatar + dropdown
+ 
   const user = session.user;
   const firstName = (user.name || "").split(" ")[0];
 

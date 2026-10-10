@@ -1,4 +1,4 @@
-// DaisyUI-r "skeleton" class diye loading placeholder
+
 export default function ProductCardSkeleton() {
   return (
     <div className="bg-white border border-gray-200 rounded-2xl p-4">

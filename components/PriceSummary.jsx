@@ -3,7 +3,7 @@ import { formatNumber, getUnit } from "@/lib/helpers";
 export default function PriceSummary({ product }) {
   const markets = product.markets || [];
 
-  // bazar-er data na thakle
+  
   if (markets.length === 0) {
     return <p className="text-gray-500">বাজারভিত্তিক তথ্য পাওয়া যায়নি।</p>;
   }

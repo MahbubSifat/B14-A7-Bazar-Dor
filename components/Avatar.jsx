@@ -3,7 +3,7 @@ export default function Avatar({ user, size = 36 }) {
 
   if (user.image) {
     return (
-      // normal <img> use korlam, karon Google/GitHub-er domain next/image-e config na kore chole na
+      
       <img
         src={user.image}
         alt={user.name}

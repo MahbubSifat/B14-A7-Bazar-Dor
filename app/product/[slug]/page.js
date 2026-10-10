@@ -16,7 +16,6 @@ export default async function ProductPage({ params }) {
   }
 
   return (
-    // login chara dekha jabe na
     <ProtectedRoute>
       <div className="max-w-6xl mx-auto px-4 py-6">
         {/* breadcrumb: হোম › চাল › পণ্যের নাম */}

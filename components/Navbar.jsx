@@ -4,6 +4,7 @@ import { getAllProducts, getCategories } from "@/lib/api";
 import BanglaDate from "./BanglaDate";
 import CategoryLinks from "./CategoryLinks";
 import Ticker from "./Ticker";
+import AuthButtons from "./AuthButtons";
 
 export default async function Navbar() {
   const categories = await getCategories();
@@ -23,18 +24,7 @@ export default async function Navbar() {
           </div>
         </Link>
 
-        {/* auth button, Step 8-e login state diye replace korbo */}
-        <div className="flex items-center gap-2">
-          <Link href="/signin" className="btn btn-ghost btn-sm sm:btn-md">
-            সাইন ইন
-          </Link>
-          <Link
-            href="/signup"
-            className="btn btn-sm sm:btn-md bg-brand text-white border-0"
-          >
-            সাইন আপ
-          </Link>
-        </div>
+        <AuthButtons />
       </div>
 
       {/* majhkhane: category link */}

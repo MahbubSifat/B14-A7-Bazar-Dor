@@ -2,12 +2,19 @@ import { cache } from "react";
 
 const BASE_URL = "https://api.api-store.workers.dev/api/bazardor";
 
+function rethrowIfDynamic(error) {
+  if (error && error.digest === "DYNAMIC_SERVER_USAGE") {
+    throw error;
+  }
+}
+
 export const getAllProducts = cache(async () => {
   try {
     const res = await fetch(BASE_URL + "/products", { cache: "no-store" });
     if (!res.ok) return [];
     return await res.json();
   } catch (error) {
+    rethrowIfDynamic(error); // <-- ekhane boshalam (catch-er shuru-te)
     console.log("Products load hoy nai:", error);
     return [];
   }
@@ -19,6 +26,7 @@ export const getCategories = cache(async () => {
     if (!res.ok) return [];
     return await res.json();
   } catch (error) {
+    rethrowIfDynamic(error); // <-- ekhane-o
     console.log("Categories load hoy nai:", error);
     return [];
   }

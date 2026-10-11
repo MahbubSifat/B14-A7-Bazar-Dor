@@ -11,7 +11,7 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-🌐 Live Demo :
+🌐 Live Demo :https://b14-a7-bazar-dor-wemq.vercel.app/
 📁 GitHub Repository: https://github.com/MahbubSifat/B14-A7-Bazar-Dor
 
 </div>
